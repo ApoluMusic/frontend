@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins|Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Poppins:600|Raleway:700&display=swap');
 
 body {
     background-color: #000;
@@ -6,6 +6,10 @@ body {
 
 nav.navbar {
     margin-top: -40px;
+}
+
+nav.navbar-loja img {
+    z-index: 1;
 }
 
 nav.navbar ul, nav.navbar button {
@@ -23,14 +27,6 @@ a.nav-link {
     margin-left: 10px;
 }
 
-nav .dropdown a[aria-expanded="true"] .fa-chevron-down {
-    display: none;
-}
-
-nav .dropdown a[aria-expanded="true"] .fa-chevron-up {
-    display: inline !important;
-}
-
 nav .dropdown i {
     font-size: 13px;
 }
@@ -45,6 +41,101 @@ nav .dropdown-menu a:hover {
 
 .dropdown-toggle::after {
     display: none;
+}
+
+/* Icone da navbar */
+
+nav.navbar-loja button.navbar-toggler .icone-menu div {
+    width: 35px;
+    height: 2px;
+    background-color: #f8d12c;
+    margin: 6px 0;
+    opacity: 1;
+    transition: width, opacity, -webkit-transform, -moz-transform, -o-transform, transform,  .3s ease-in-out;
+}
+
+nav.navbar-loja button.navbar-toggler .icone-menu div.meio {
+    width: 30px;
+}
+
+nav.navbar-loja button.navbar-toggler .icone-menu div.meio:hover {
+    width: 35px;
+}
+
+/* Icone de fechar da navbar*/
+
+nav.navbar-loja button.navbar-toggler .icone-menu.fechar .cima {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); 
+}
+
+nav.navbar-loja button.navbar-toggler .icone-menu.fechar .meio {
+    display: none;
+    opacity: 0;
+}
+
+nav.navbar-loja button.navbar-toggler .icone-menu.fechar .baixo {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-455deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); 
+    margin-top: -8px;
+}
+
+/* Barra de pesquisa da navbar */
+
+.pesquisa.mobile {
+    display: none;
+}
+
+/* Navbar das outras páginas */
+
+nav.navbar-loja {
+    margin-top: -20px !important;
+    z-index: 999;
+}
+
+nav.navbar-loja input {
+    background-color: transparent;
+    border: 1px solid rgba(179,179,179,0.3);
+    border-radius: 50px;
+    color: #fff;
+    float: right;
+    margin-top: -3px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 30%;
+}
+
+nav.navbar-loja input:focus {
+    border: 1px solid rgba(179,179,179,1);
+}
+
+nav.navbar-loja a.link-normal {
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+nav.navbar-loja a.link-normal:hover {
+    text-decoration: underline #b3b3b3;
+}
+
+@media (max-width: 767px) {
+
+    nav.navbar-loja input {
+        width: 40%;
+    }
+
+    .pesquisa.geral  {
+        display: none;
+    }
+
+    .pesquisa.mobile {
+        display: inline-block;
+    }
+
 }
 
 /* Botão da Navbar */
@@ -228,6 +319,11 @@ nav .dropdown-menu a:hover {
     padding: 17px;
 }
 
+.destaques-loja {
+    background-color: #000;
+    margin-right: 10px;
+}
+
 .destaques .titulo h3 {
     color: #fff;
     display: inline-block;
@@ -330,3 +426,72 @@ nav .dropdown-menu a:hover {
     }
 
 }
+
+/* Loja */
+
+.loja .sidebars {
+    margin-top: 19px;
+}
+
+.loja .sidebars .card {
+    background-color: rgba(179,179,179,0.3);
+    color: #fff;
+}
+
+.loja .sidebars .card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+
+.loja .sidebars .card h4  span{
+    color: #9535f6;
+    float: right;
+    font-size: 17px;
+}
+
+.loja .sidebars .card h4  span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.loja .sidebars .card .filtro {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+.loja .sidebars .card .filtro .titulo h5 {
+    font-weight: 600;
+}
+
+.loja .sidebars .card .filtro .opcoes input[type="radio"] {
+    display: none;
+}
+
+.loja .sidebars .card .filtro .opcoes {
+    margin-top: 21px;
+}
+  
+.loja .sidebars .card .filtro .opcoes label {
+    background-color: transparent;
+    border: 1px solid rgba(179,179,179,0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 21px;
+    width: 21px;
+}
+
+.loja .sidebars .card .filtro .opcoes input[type="radio"]:checked + label {
+    background-color: #9535f6;
+    border-color: #9535f6;
+}
+
+.loja .sidebars .card .filtro .opcoes span {
+    position: relative;
+    top: -13px;
+    left: 3px;
+}
+
+/* Range Slider */
+

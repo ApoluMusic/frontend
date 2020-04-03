@@ -14,6 +14,22 @@ $('a.dropdown-toggle').click(function() {
 
 });
 
+$('button.navbar-toggler').click(function() {
+
+    if($('button.navbar-toggler .icone-menu').hasClass('fechar')) {
+
+        $('button.navbar-toggler .icone-menu').removeClass('fechar');
+        
+    }
+
+    else {
+
+        $('button.navbar-toggler .icone-menu').addClass('fechar');
+
+    }
+
+});
+
 /* Carousel */
 
 $(document).ready(function(){
@@ -49,3 +65,6 @@ $(document).ready(function(){
     });
     
 });
+
+/* Range Slider */
+
