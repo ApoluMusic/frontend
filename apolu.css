@@ -4,6 +4,15 @@ body {
     background-color: #000;
 }
 
+a {
+    color: #9535f6;
+}
+
+a:hover {
+    color: #9535f6;
+    text-decoration: underline;
+}
+
 nav.navbar {
     margin-top: -40px;
 }
@@ -493,5 +502,82 @@ nav.navbar-loja a.link-normal:hover {
     left: 3px;
 }
 
-/* Range Slider */
+/* Modal de login e cadastro */
 
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+  
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+  
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.login .modal-content {
+    background-color: #000;
+    border: 1px solid rgba(179,179,179,0.3);
+    color: #fff;
+    padding: 10px;
+}
+
+.login .modal-content .div-login h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+.login .modal-content .div-login .form {
+    margin-top: 27px;
+}
+
+.login .modal-content .div-login .form label {
+    display: block;
+    margin-top: 17px;
+}
+
+.login .modal-content .div-login input {
+    background-color: transparent;
+    border: 1px solid rgba(179,179,179,0.3);
+    color: #fff;
+    padding: 10px;
+}
+
+.login .modal-content .div-login input:focus {
+    border: 1px solid #9535f6;
+}
+
+.login .modal-content .div-login button {
+    background-color: #9535f6;
+    border: 2px solid #9535f6;
+    border-radius: 0px;
+    color: #fff;
+    display: block;
+    margin-bottom: 11px;
+    margin-top: 23px;
+    text-transform: uppercase;
+    transition: border, background-color .2s linear;  
+    width: 100%;
+}
+
+.login .modal-content .div-login button:hover {
+    background-color: transparent;
+    border: 2px solid #9535f6;
+}
+
+.login .modal-content .div-login a {
+    display: block;
+}
+
+.login .modal-content .div-login a:last-child {
+    margin-top: 2px;
+}
