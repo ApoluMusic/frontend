@@ -64,6 +64,8 @@ $(document).ready(function () {
         carousel.trigger('prev.owl.carousel');
     });
 
+
+
 });
 
 /* Limpar  */
@@ -73,5 +75,15 @@ $('.limpar').click(function () {
     filtroGenero.prop('checked', true);
 });
 
-/* Range Slider */
+/* BPM options */
 
+$('.price-option').click(function ({ target }) {
+    const checked = target.getAttribute('data-checked');
+    const options = $('.price-options');
+    if (checked == 'true') {
+        target.setAttribute('data-checked', 'false')
+    } else if (checked == 'false') {
+        target.setAttribute('data-checked', 'true')
+    }
+    localStorage.setItem('price', target.innerHTML.trim());
+})

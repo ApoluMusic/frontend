@@ -586,3 +586,28 @@ nav.navbar-loja a.link-normal:hover {
 .login .modal-content .div-login a:last-child {
     margin-top: 2px;
 }
+
+/* BPM Options */
+
+.prices {
+    list-style-type: none;
+}
+
+.prices .price-option {
+    width: 130px;
+    height: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    user-select: none;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: background-color 0.2 ease-in;
+}
+
+li.price-option[data-checked='true'] {
+    background-color: #9535f6;
+}
