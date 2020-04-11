@@ -108,18 +108,20 @@ nav.navbar-loja {
 
 nav.navbar-loja input {
     background-color: transparent;
-    border: 1px solid rgba(179,179,179,0.3);
+    border: 2px solid rgba(179,179,179,0.3);
     border-radius: 50px;
     color: #fff;
     float: right;
     margin-top: -3px;
     padding: 10px;
+    outline: 0;
+    transition: border 200ms ease;
     padding-left: 30px;
     width: 30%;
 }
 
 nav.navbar-loja input:focus {
-    border: 1px solid rgba(179,179,179,1);
+    border: 2px solid rgba(179,179,179,0.6);
 }
 
 nav.navbar-loja a.link-normal {
@@ -480,6 +482,7 @@ nav.navbar-loja a.link-normal:hover {
 
 .loja .sidebars .card .filtro .opcoes {
     margin-top: 21px;
+    user-select: none;
 }
   
 .loja .sidebars .card .filtro .opcoes label {
@@ -494,12 +497,14 @@ nav.navbar-loja a.link-normal:hover {
 .loja .sidebars .card .filtro .opcoes input[type="radio"]:checked + label {
     background-color: #9535f6;
     border-color: #9535f6;
+    transition: all 0.2s ease-in-out;
 }
 
 .loja .sidebars .card .filtro .opcoes span {
     position: relative;
     top: -13px;
     left: 3px;
+    padding: 10px;
 }
 
 /* Modal de login e cadastro */
