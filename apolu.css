@@ -354,6 +354,7 @@ nav.navbar-loja a.link-normal:hover {
 
 .destaques .card .imagem img {
     border-radius: 3px;
+    transition: filter 500ms linear;
     -webkit-transition : -webkit-filter 500ms linear
 }
 
@@ -410,7 +411,6 @@ nav.navbar-loja a.link-normal:hover {
 
 .botoes-carousel {
     color: #fff;
-    display: inline;
     float: right;
     margin-right: 11px;
 }
@@ -511,7 +511,7 @@ nav.navbar-loja a.link-normal:hover {
 
 .modal {
     text-align: center;
-    padding: 0!important;
+    padding: 0 !important;
 }
   
 .modal:before {

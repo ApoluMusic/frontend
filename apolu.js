@@ -1,25 +1,25 @@
-$('a.dropdown-toggle').click(function() {
+$('a.dropdown-toggle').click(function () {
 
-    if($('li.dropdown').hasClass('show')){
+    if ($('li.dropdown').hasClass('show')) {
 
-        $('a.link-normal').css('color','#fff');
+        $('a.link-normal').css('color', '#fff');
 
     }
 
     else {
 
-        $('a.link-normal').css('color','#b3b3b3');
+        $('a.link-normal').css('color', '#b3b3b3');
 
     }
 
 });
 
-$('button.navbar-toggler').click(function() {
+$('button.navbar-toggler').click(function () {
 
-    if($('button.navbar-toggler .icone-menu').hasClass('fechar')) {
+    if ($('button.navbar-toggler .icone-menu').hasClass('fechar')) {
 
         $('button.navbar-toggler .icone-menu').removeClass('fechar');
-        
+
     }
 
     else {
@@ -32,38 +32,45 @@ $('button.navbar-toggler').click(function() {
 
 /* Carousel */
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    var carousel = $('.owl-carousel'); 
+    var carousel = $('.owl-carousel');
 
     carousel.owlCarousel({
-        margin:10, 
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
             },
-            600:{
-                items:2,
-                nav:false
+            600: {
+                items: 2,
+                nav: false
             },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
             }
         }
     });
 
-    $(".proximo").click(function() {
+    $(".proximo").click(function () {
         carousel.trigger('next.owl.carousel');
     });
-    
-    $(".anterior").click(function() {
+
+    $(".anterior").click(function () {
         carousel.trigger('prev.owl.carousel');
     });
-    
+
+});
+
+/* Limpar  */
+
+$('.limpar').click(function () {
+    const filtroGenero = $('#checkbox-todos');
+    filtroGenero.prop('checked', true);
 });
 
 /* Range Slider */
