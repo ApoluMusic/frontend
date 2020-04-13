@@ -1,346 +1,380 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>Apolu Music</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!----ABAIXO AS REFERENCIAS QUE VAMOS USAR DE CSS JS ENTRE OUTROS---->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        <link href="../apolu.css" rel="stylesheet">
-        
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-        <link rel="manifest" href="../favicon/site.webmanifest">
-        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#8535f6">
-        <link rel="shortcut icon" href="../favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-config" content="../favicon/browserconfig.xml">
-        <meta name="theme-color" content="#000000">
-    </head>
-    <body>
 
-      <!-- Modais de login e cadastro -->
+<head>
+  <title>Apolu Music</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="modal fade login" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              
-              <div class="div-login">
+  <!----ABAIXO AS REFERENCIAS QUE VAMOS USAR DE CSS JS ENTRE OUTROS---->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-                <h4>Login</h4>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-                <div class="form">
-                  <label for="nome">Nome de Usuário</label>
-                  <input type="text" id="nome" placeholder="João">
+  <link href="../apolu.css" rel="stylesheet">
 
-                  <label for="senha">Senha</label>
-                  <input type="password" id="senha" placeholder="******">
-                  
-                  <button class="btn">Entrar</button>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#8535f6">
+  <link rel="shortcut icon" href="../favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+</head>
 
-                  <a href="">Esqueci minha senha</a>
-                  <a href="">Criar Conta</a>
+<body>
 
-                </div>
+  <!-- Modais de login e cadastro -->
 
-              </div>
+  <div class="modal fade login" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="div-login">
+
+            <h4>Login</h4>
+
+            <div class="form">
+              <label for="nome">Nome de Usuário</label>
+              <input type="text" id="nome" placeholder="João">
+
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" placeholder="******">
+
+              <button class="btn">Entrar</button>
+
+              <a href="">Esqueci minha senha</a>
+              <a href="">Criar Conta</a>
 
             </div>
+
           </div>
+
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="modal fade login" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              
-              <div class="div-login">
+  <div class="modal fade login" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
 
-                <h4>Cadastro</h4>
+          <div class="div-login">
 
-                <div class="form">
+            <h4>Cadastro</h4>
 
-                  <label for="nome">Email</label>
-                  <input type="email" id="email-cadastro" placeholder="joãozinho@gmail.com">
+            <div class="form">
 
-                  <label for="nome">Nome de Usuário</label>
-                  <input type="text" id="nome-cadastro" placeholder="João">
+              <label for="nome">Email</label>
+              <input type="email" id="email-cadastro" placeholder="joãozinho@gmail.com">
 
-                  <label for="senha">Senha</label>
-                  <input type="password" id="senha-cadastro" placeholder="******">
-                  
-                  <button class="btn">Criar Conta</button>
+              <label for="nome">Nome de Usuário</label>
+              <input type="text" id="nome-cadastro" placeholder="João">
 
-                  <a href="">Login</a>
+              <label for="senha">Senha</label>
+              <input type="password" id="senha-cadastro" placeholder="******">
 
-                </div>
+              <button class="btn">Criar Conta</button>
 
-              </div>
+              <a href="">Login</a>
 
             </div>
+
           </div>
+
         </div>
       </div>
+    </div>
+  </div>
 
-        <nav class="navbar navbar-expand-lg navbar-right navbar-loja">
-            <a class="navbar-brand" href="https://apolumusic.com.br/site/"><img src="../img/logo-mini.png" alt="Apolu Music" class="img-fluid" width="100px;"></a>
-            <input type="text" placeholder="O que você está procurando ?" class="pesquisa geral mr-auto">
-            <input type="text" placeholder="Pesquisar..." class="pesquisa mobile mr-auto">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              
-              <div class="icone-menu">
-                <div class="cima"></div>
-                <div class="meio ml-auto"></div>
-                <div class="baixo"></div>
-              </div>
+  <nav class="navbar navbar-expand-lg navbar-right navbar-loja">
+    <a class="navbar-brand" href="https://apolumusic.com.br/site/"><img src="../img/logo-mini.png" alt="Apolu Music"
+        class="img-fluid" width="100px;"></a>
+    <input type="text" placeholder="O que você está procurando ?" class="pesquisa geral mr-auto">
+    <input type="text" placeholder="Pesquisar..." class="pesquisa mobile mr-auto">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link link-normal" href="https://apolumusic.com.br/site/loja/">Loja</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-normal ultimo" href="#">Premium</a>
-                </li>
-                <li class="nav-item nav-botoes">
-                  <button class="btn botao-secundario my-2 my-sm-0" data-toggle="modal" data-target="#modalLogin">LOG IN</button>
-                  <button class="btn botao-primario my-2 my-sm-0" data-toggle="modal" data-target="#modalCadastro">CADASTRO</button>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <div class="icone-menu">
+        <div class="cima"></div>
+        <div class="meio ml-auto"></div>
+        <div class="baixo"></div>
+      </div>
 
-          <section class="loja">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link link-normal" href="https://apolumusic.com.br/site/loja/">Loja</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-normal ultimo" href="#">Premium</a>
+        </li>
+        <li class="nav-item nav-botoes">
+          <button class="btn botao-secundario my-2 my-sm-0" data-toggle="modal" data-target="#modalLogin">LOG
+            IN</button>
+          <button class="btn botao-primario my-2 my-sm-0" data-toggle="modal"
+            data-target="#modalCadastro">CADASTRO</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-            <div class="container">
+  <section class="loja">
 
-              <div class="row">
+    <div class="container">
 
-                <div class="col-lg-4">
+      <div class="row">
 
-                  <div class="sidebars">
+        <div class="col-lg-4">
 
-                    <div class="card">
-                      <div class="card-body">
+          <div class="sidebars">
 
-                        <h4>Filtros <span>limpar</span></h4>
+            <div class="card">
+              <div class="card-body">
 
-                        <div class="filtro">
+                <h4>Filtros <span class="limpar">limpar</span></h4>
 
-                          <div class="titulo">
-                            <h5>Gênero</h5>
-                          </div>
+                <div class="filtro">
 
-                          <div class="opcoes">
+                  <div class="titulo">
+                    <h5>Gênero</h5>
+                  </div>
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-todos" name="genero" value="todos" checked>
-                              <label for="checkbox-todos"></label>
-                              <span>Todos</span>
-                            </div>
+                  <div class="opcoes">
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-hip-hop" name="genero" value="hip-hop">
-                              <label for="checkbox-hip-hop"></label>
-                              <span>Hip Hop</span>
-                            </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-todos" name="genero" value="todos" checked>
+                      <label for="checkbox-todos"></label>
+                      <span>Todos</span>
+                    </div>
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-pop" name="genero" value="pop">
-                              <label for="checkbox-pop"></label>
-                              <span>Pop</span>
-                            </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-hip-hop" name="genero" value="hip-hop">
+                      <label for="checkbox-hip-hop"></label>
+                      <span>Hip Hop</span>
+                    </div>
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-rock" name="genero" value="rock">
-                              <label for="checkbox-rock"></label>
-                              <span>Rock</span>
-                            </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-pop" name="genero" value="pop">
+                      <label for="checkbox-pop"></label>
+                      <span>Pop</span>
+                    </div>
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-funk" name="genero" value="funk">
-                              <label for="checkbox-funk"></label>
-                              <span>Funk</span>
-                            </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-rock" name="genero" value="rock">
+                      <label for="checkbox-rock"></label>
+                      <span>Rock</span>
+                    </div>
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-reggae" name="genero" value="reggae">
-                              <label for="checkbox-reggae"></label>
-                              <span>Reggae</span>
-                            </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-funk" name="genero" value="funk">
+                      <label for="checkbox-funk"></label>
+                      <span>Funk</span>
+                    </div>
 
-                            <div class="item">
-                              <input type="radio" id="checkbox-eletronica" name="genero" value="eletronica">
-                              <label for="checkbox-eletronica"></label>
-                              <span>Eletronica</span>
-                            </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-reggae" name="genero" value="reggae">
+                      <label for="checkbox-reggae"></label>
+                      <span>Reggae</span>
+                    </div>
 
-                          </div>
-
-                        </div>
-
-                        <div class="filtro">
-
-                          <div class="titulo">
-                            <h5>BPM</h5>
-                          </div>
-
-                          <div class="opcoes">
-
-                            
-
-                          </div>
-
-                        </div>
-                         
-                      </div>
+                    <div class="item">
+                      <input type="radio" id="checkbox-eletronica" name="genero" value="eletronica">
+                      <label for="checkbox-eletronica"></label>
+                      <span>Eletronica</span>
                     </div>
 
                   </div>
 
                 </div>
 
-                <div class="col-lg-8">
+                <div class="filtro">
 
-                  <div class="container">
+                  <div class="titulo">
+                    <h5>BPM</h5>
+                  </div>
 
-                    <div class="destaques destaques-loja"> 
+                  <div class="bpm-opcoes">
 
-                        <div class="titulo">
-                          <h3>Destaques</h3>
-                          <div class="botoes-carousel">
-                            <span><i class="fas fa-chevron-left anterior"></i></span>
-                            <span><i class="fas fa-chevron-right proximo"></i></span>
-                          </div>
-                        </div>
+                    <ul class="prices">
 
-                        <div class="owl-carousel">
-                          <div class="card">
+                      <li data-checked="false" class="price-option">
+                        Até R$50
+                      </li>
 
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album.jpg" width="10px">
-                            </div>
+                      <li data-checked="false" class="price-option">
+                        R$51 - R$100
+                      </li>
 
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
+                      <li data-checked="false" class="price-option">
+                        R$101 - R$200
+                      </li>
 
-                          </div>
-                          <div class="card"> 
-                            
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album2.jpg" width="10px">
-                            </div>
+                      <li data-checked="false" class="price-option">
+                        R$201 - R$300
+                      </li>
 
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
-
-                          </div>
-                          <div class="card"> 
-                            
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album3.jpg" width="10px">
-                            </div>
-
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
-
-                          </div>
-                          <div class="card"> 
-                            
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album4.jpg" width="10px">
-                            </div>
-
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
-
-                          </div>
-                          <div class="card"> 
-                            
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album5.jpg" width="10px">
-                            </div>
-
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
-
-                          </div>
-                          <div class="card"> 
-                            
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album6.jpg" width="10px">
-                            </div>
-
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
-
-                          </div>
-                          <div class="card"> 
-                            
-                            <div class="imagem">
-                              <i class="fas fa-play"></i>
-                              <img src="../img/album7.jpg" width="10px">
-                            </div>
-
-                            <div class="info">
-                              <p class="nome-beat">Nome do Beat</p>
-                              <p class="nome-artista"><span>Artista</span></p>
-                              <p class="bpm-beat"><span>120BPM</span></p>
-                            </div>
-
-                          </div>
-                        </div>
-
-                    </div>
+                    </ul>
 
                   </div>
-                
+
                 </div>
 
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8">
+
+          <div class="container">
+
+            <div class="destaques destaques-loja">
+
+              <div class="titulo">
+                <h3>Destaques</h3>
+                <div class="botoes-carousel">
+                  <span><i class="fas fa-chevron-left anterior"></i></span>
+                  <span><i class="fas fa-chevron-right proximo"></i></span>
+                </div>
+              </div>
+
+              <div class="owl-carousel">
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="../img/album.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="../img/album2.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="../img/album3.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="../img/album4.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="./img/album5.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="./img/album6.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
+                <div class="card">
+
+                  <div class="imagem">
+                    <i class="fas fa-play"></i>
+                    <img src="./img/album7.jpg" width="10px">
+                  </div>
+
+                  <div class="info">
+                    <p class="nome-beat">Nome do Beat</p>
+                    <p class="nome-artista"><span>Artista</span></p>
+                    <p class="bpm-beat"><span>120BPM</span></p>
+                  </div>
+
+                </div>
               </div>
 
             </div>
 
-          </section>
+          </div>
 
-          <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-          <script src="https://kit.fontawesome.com/29ef900910.js" crossorigin="anonymous"></script> <!--BIBLIOTECA DO FONT AWESOME-->
-          <script src="../apolu.js"></script>
+        </div>
 
-    </body>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/29ef900910.js" crossorigin="anonymous"></script>
+  <!--BIBLIOTECA DO FONT AWESOME-->
+  <script src="./apolu.js"></script>
+
+</body>
+
 </html>
